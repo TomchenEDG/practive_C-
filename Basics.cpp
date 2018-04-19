@@ -40,7 +40,7 @@ int main(){
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 3.practice 'enumerate constants' command.*
+*** 3.practice 'enumerate constants' command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -62,4 +62,45 @@ int main()
         cout<<"I'm not sure January is the best month.\n";
     }
     return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 4.practice 'file io' command.*
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string line;
+    //create an output stream to write to the file.
+    //append the line to the end of file.
+    ofstream myfileI("input.txt", ios::app);
+    if (myfileI.is_open())
+    {
+        myfileI << "I am adding a line.\n";
+        myfileI << "I am adding another line.\n";
+        myfileI.close();
+    }
+    else cout << "Unable to open file for reading.";
+
+    //create an input stream to read the file.
+    ifstream myfileO("input.txt");
+    //During of the creation ifstream, the file is opened.
+    //so we do not explicitly open the file .
+    if (myfileO.is_open())
+    {
+        while getline(myfileO, line)
+        {
+            cout << line << '\n';
+        }
+        myfileO.close();
+    else cout << "Unable to open the file for reading.";
+    return 0;
+    }
 }
