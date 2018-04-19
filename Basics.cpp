@@ -66,7 +66,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 4.practice 'file io' command.*
+*** 4.practice "file io" command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -103,4 +103,57 @@ int main()
     else cout << "Unable to open the file for reading.";
     return 0;
     }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 5.practice "Header File" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+/*
+main.hpp
+#include <iostream>
+using namespace std;
+*/
+
+#include "main.hpp"
+int main()
+{
+    cout << "Hello, I use the header files";
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 6.practice "user input" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    //Define two int variable and one string variable.
+    int year = 0;
+    int age = 0;
+    string name = "";
+
+    //print a message to the user.
+    cout << "What year is your favorite?\n";
+    //get the user response and assign it to the variable year.
+    cin >> year;
+    //out the response to user.
+    cout << "How interesting! your favorite year is " << year << '!\n';
+
+    cout << "At what age did you learn to ride bike?\n";
+    cin >> age;
+    cout << "How interesting! your learn to ride at " << age << '!\n';
+
+    cout << "What's your name?";
+    cin >> name;
+    cout << "Your name is " << name << '!\n';
+    return 0;
 }
