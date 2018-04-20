@@ -157,3 +157,72 @@ int main()
     cout << "Your name is " << name << '!\n';
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 7.practice "getline()" command.*
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string name1, address1, phoneNo1;
+    string name2, addfess2, phoneNo2;
+
+    cout << "User1 what's your name?\n";
+    getline(cin, name1);
+    cout << "User1 what's your address?\n";
+    getline(cin, address1);
+    cout << "User1 what's your phoneNo?\n";
+    getline(cin, phoneNo1);
+
+    cout << "User2 what's your name?\n";
+    getline(cin, name2);
+    cout << "User2 what's your address?\n";
+    getline(cin, address2);
+    cout << "User2 what's your phoneNo?\n";
+    getline(cin, phoneNo2);
+
+    cout << "\n\n" << name1 << "\n";
+    cout << "\t\t" << address1 << "\n";
+    cout << "\t\t" << phoneNo1 << "\n";
+
+    cout << "\n\n" << name2 << "\n";
+    cout << "\t\t" << adress2 << "\n";
+    cout << "\t\t" << phoneNo2 << "\n";
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 8.practice "covert string" command.*
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string stringLenth, stringWidth;
+    float Lenth = 0;
+    float Width = 0;
+    float area = 0;
+
+    cout << "Enter your number of the Lenth of room :";
+    getline(cin, stringLenth);
+    stringstream(stringLenth) >> Lenth;
+    cout << "Enter Width:";
+    getline(cin, stringWidth);
+    stringstream(stringWidth) << Width;
+
+    area = Lenth * Width;
+    cout << "Your room the area is :" << area << endl;
+    return 0;
+}
