@@ -226,3 +226,40 @@ int main()
     cout << "Your room the area is :" << area << endl;
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 9.practice "Arithmetic Operations" command.*
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#inculde <iostream>
+#inculde <cmath>
+using namespace std;
+
+int main()
+{
+    //Dimension of the Cube
+    float cubeSide = 5.4;
+    //Dimension of the Sphere
+    float SphereRadius = 2.33;
+    //Dimension of the cone
+    float coneRadius = 7.65;
+    float coneHeight = 14;
+
+    float volCube, volSphere, volCone = 0;
+
+    //Find volume of cube
+    volCube = pow(cubeSide, 3);
+    //Find volume of sphere
+    volSphere = (4.0/3.0)*M_PI*pow(SphereRadius, 3);
+    //Find volume of cone
+    //M_PI is in the cmath library, it does not need to reference
+    //the namespace std.on the other hand, pow() is need to reference it.
+    volCone = M_PI * pow(coneRadius, 2) * (coneHeight/3);
+
+    cout << "the volCone:" << volCube << "\n"
+    cout << "the volSphere:" << volSphere << "\n"
+    cout << "the volCone:" << volCone << endl
+    return 0;
+}
