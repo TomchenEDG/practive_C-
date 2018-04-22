@@ -258,9 +258,9 @@ int main()
     //the namespace std.on the other hand, pow() is need to reference it.
     volCone = M_PI * pow(coneRadius, 2) * (coneHeight/3);
 
-    cout << "the volCone:" << volCube << "\n"
-    cout << "the volSphere:" << volSphere << "\n"
-    cout << "the volCone:" << volCone << endl
+    cout << "the volCone:" << volCube << "\n";
+    cout << "the volSphere:" << volSphere << "\n";
+    cout << "the volCone:" << volCone << endl;
     return 0;
 }
 
@@ -419,15 +419,15 @@ int main()
 
     if (guess<TARGET)
     {
-        cout<<"Your guess number is too low.\n"
+        cout<<"Your guess number is too low.\n";
     }
     else if (guess>TARGET)
     {
-        cout<<"Your guess number is too high.\n"
+        cout<<"Your guess number is too high.\n";
     }
     else
     {
-        cout<<"Your guess is correctly.\n"
+        cout<<"Your guess is correctly.\n";
     }
     return 0;
 }
@@ -443,8 +443,8 @@ using namespace std;
 
 int main()
 {
-    float in1, in2
-    char operation
+    float in1, in2;
+    char operation;
     float answer;
 
     cout<<"Please Enter two number:\n";
@@ -476,7 +476,7 @@ int main()
                 break;
             }
         default:
-            cout<<"illegal operation."
+            cout<<"illegal operation.";
     }
     cout<<in1<<operation<<in2<<"="<<answer;
 
