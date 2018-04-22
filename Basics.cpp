@@ -431,3 +431,54 @@ int main()
     }
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 13.practice "switch statements" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float in1, in2
+    char operation
+    float answer;
+
+    cout<<"Please Enter two number:\n";
+    cin>>in1;
+    cin>>in2;
+    cout<<"Please Enter operation:\n";
+    cin>>operation;
+
+    switch(operation)
+    {
+        case('+'):
+            {
+                answer = in1 + in2;
+                break;
+            }
+        case('-'):
+            {
+                answer = in1 - in2;
+                break;
+            }
+        case('*'):
+            {
+                answer = in1 * in2;
+                break;
+            }
+        case('/'):
+            {
+                answer = in1 / in2;
+                break;
+            }
+        default:
+            cout<<"illegal operation."
+    }
+    cout<<in1<<operation<<in2<<"="<<answer;
+
+    return 0;
+}
