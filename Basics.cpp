@@ -400,3 +400,34 @@ int main()
     return 0;
 
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 12.practice "if statements" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int TARGET = 0;
+    int guess;
+    cout<<"Guess a number between 0 - 100\n";
+    cin>>guess;
+
+    if (guess<TARGET)
+    {
+        cout<<"Your guess number is too low.\n"
+    }
+    else if (guess>TARGET)
+    {
+        cout<<"Your guess number is too high.\n"
+    }
+    else
+    {
+        cout<<"Your guess is correctly.\n"
+    }
+    return 0;
+}
