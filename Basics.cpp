@@ -263,3 +263,30 @@ int main()
     cout << "the volCone:" << volCone << endl
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 10.practice "Relational operator" command.*
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    //instead of printing 0 and 1,create an array where.
+    string Torf[] = {"False", "True"}
+
+    int a = 100;
+    int b = 33;
+    int c = 33;
+
+    cout << "a > b is " << Torf[a>b];
+    cout << "a < b is " << Torf[a<b];
+    cout << "a != b is " << Torf[a!=b];
+    cout << "a <= b is " << Torf[a<=b];
+    cout << "a >= b is " << Torf[a>=b];
+    return 0;
+}
