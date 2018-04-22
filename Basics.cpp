@@ -335,3 +335,68 @@ int main()
 
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 11.practice "Truth Table Simplified" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //(A and B and C) or (A and( (not B) or (not C))) = Q
+
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int Q;
+    Q = a;
+
+    //case 0;
+    cout<<"a\tb\tc\t\tQ\n";
+    cout<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 1;
+    Q = A;
+    cout<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 0;
+    b = 1;
+    Q = a;
+    cout<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 1;
+    b = 1;
+    Q = a;
+    cout<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 0;
+    b = 0;
+    a = 1;
+    Q = a;
+    cout<<a<<"\t"<<b<<"/t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 1;
+    b = 0;
+    a = 1;
+    Q = A;
+    cout<<a<<"\t"<<b<<"/t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 0;
+    b = 1;
+    a = 1;
+    Q = a;
+    cout<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    c = 1;
+    b = 1;
+    a = 1;
+    Q = a;
+    cou<<a<<"\t"<<b<<"\t"<<c<<"\t\t"<<Q<<"\n";
+
+    return 0;
+
+}
