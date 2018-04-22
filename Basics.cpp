@@ -160,7 +160,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 7.practice "getline()" command.*
+*** 7.practice "getline()" command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -199,7 +199,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 8.practice "covert string" command.*
+*** 8.practice "covert string" command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -229,7 +229,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 9.practice "Arithmetic Operations" command.*
+*** 9.practice "Arithmetic Operations" command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -266,7 +266,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-*** 10.practice "Relational operator" command.*
+*** 10.practice "Relational operator" command.
 */
 /////////////////////////////////////////////////////////////////////////////
 
@@ -288,5 +288,50 @@ int main()
     cout << "a != b is " << Torf[a!=b];
     cout << "a <= b is " << Torf[a<=b];
     cout << "a >= b is " << Torf[a>=b];
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 10.practice "Logic operators" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int A = 5;
+    int B = 4;
+    int C = 5;
+    int D = 0;
+
+    string Torf[] = {"False", "True"};
+
+    //The && operator.
+    cout << "(A == C) is " << Torf[A==C];
+    cout << "\n(B == D) is " << Torf[B==D];
+    cout << "\n(B > D) is " << Torf[B>D];
+
+    //a True and False equal False.
+    cout << "\n\n(A == C)&&(B == D) is " << Torf[(A==C)&&(B==D)];
+    //a True and True equal True.
+    cout << "\n(A == C)&&(B > D) is " << Torf[(A==C)&&(B>D)];
+
+    //The || operator.
+    //a True || false equal True.
+    cout << "\n\n(A == C) || (B == D) is " << Torf[(A==C)||(B==D)];
+    //a True || True equal True.
+    cout << "\n(A == C) || (B > D) is " << Torf[(A==c)||(B>D)];
+
+    //The not operator.
+    cout << "\n\nA < B is " << Torf[(A<B)];
+    cout << "\n!(A<b) is " << Torf[!(A<B)];
+
+    cout << "\n\nA == C is " << Torf[A==C];
+    cout << "\n!(A==C) is " << Torf[!(A==C)];
+
     return 0;
 }
