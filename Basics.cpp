@@ -482,3 +482,59 @@ int main()
 
     return 0;
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 14.practice "LinkList" command.
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+#clcude<stdlib.h>
+#clcude<stdio.h>
+
+struct Node
+{
+    int data;
+    struct Node* next;
+};
+
+struct Node* head;
+
+void Insert(x)
+{
+    Node* temp = new Node();
+    temp ->data = x;
+    temp ->next = Null;
+
+    Node* temp1 = head;
+    if temp1 != Null;
+    {
+        whlie(temp1->next!=Null)
+            temp1 = temp1.next;
+    }
+    temp1.next = temp;
+    else
+        temp1->next = temp;
+}
+
+void print()
+{
+    Node* temp = head;
+    printf("The list is :\n");
+    whlie(temp!=Null)
+    {
+        printf("%d", temp->data)
+        temp.next = temp;
+    }
+    return;
+}
+
+int main()
+{
+    head = Null;
+    Insert(2);
+    Insert(3);
+    Insert(4);
+    Insert(5);
+    pirnt();
+}
