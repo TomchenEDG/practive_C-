@@ -538,3 +538,45 @@ int main()
     Insert(5);
     pirnt();
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 15.practice "LinkList - Print recursion" command. C Language
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+struct Node
+{
+    int data
+    struct Node* next
+};
+
+struct Node* Insert(Node* head, int data)
+{
+    Node* temp = (struct Node*)malloc(sizeof(struct Node));
+    temp->data;
+    temp->next;
+    if(head==Null)head=temp;
+    else{
+        Node* temp1 = head;
+        while(temp1->next!=Null)temp1=temp1->next;
+        temp1-next=temp;
+    }
+    return head;
+}
+
+void print(struct Node* p)
+{
+    if(p == Null)return;
+    printf("\d", p->data)
+    print(p->next)
+}
+
+int main()
+{
+    head = Insert(head, 2)
+    head = Insert(head, 4)
+    head = Insert(head, 6)
+    head = Insert(head, 5)
+    print(head)
+}
