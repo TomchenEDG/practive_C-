@@ -624,3 +624,26 @@ int main()
     ReversePrint(head)
 }
 
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 17.practice "Reverse LinkList" command. C Language
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+struct Node
+{
+    int data;
+    struct Node* next;
+};
+struct Node* head;
+void Reverse(struct Node* p)
+{
+    if(p->next==Null){
+        head = p;
+        return;
+    }
+    Reverse(p->next);
+    struct Node* q = p->next;
+    q->next=p;
+    p->next=null;
+}
