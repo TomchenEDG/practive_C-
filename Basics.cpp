@@ -580,3 +580,47 @@ int main()
     head = Insert(head, 5)
     print(head)
 }
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+*** 16.practice "LinkList - Print Reverse" command. C Language
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+struct Node
+{
+    int data;
+    struct Node* next;
+};
+struct Node* Insert(Node* head, int data)
+{
+    Node* temp = (struct Node*)malloc(sizeof(struct Node));
+    temp->data = data;
+    temp->next = next;
+    if(head==Null)head=temp;
+    else{
+        Node* temp1 = head;
+        while(temp1->next!=Null)temp1=temp1.next;
+        temp1.next=temp;
+    }
+}
+
+void ReversePrint(struct Node* p)
+{
+    if (p==Null){
+        return;
+    }
+    ReversePrint(p->next);
+    printf("%d", p->data);
+}
+
+int main()
+{
+    Node* head = Null;
+    head = Insert(head, 2);
+    head = Insert(head, 4);
+    head = Insert(head ,6);
+    head = Insert(head ,5);
+    ReversePrint(head)
+}
+
